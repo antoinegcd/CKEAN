@@ -1,0 +1,23 @@
+﻿<Window x:Class="CKEAN.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CKEAN"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Background="DarkRed">
+    <Border Background="#2e3137" CornerRadius="20" Margin="20">
+        <StackPanel Margin="20">
+            <Label Content="Code EAN" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator Foreground="White"/>
+            <Label Content="Identifiant" Foreground="White"/>
+            <TextBox Name="textBoxEan" Background="#545d6a" Foreground="White" FontSize="18" />
+            <StackPanel Orientation="Horizontal">
+                <Button Name="btnReset" Content="Remise a zero" Margin="60 10" Background="#545d6a" Foreground="White" FontSize="18" Click="btnReset_Click"/>
+                <Button Name="btnSubmit" Content="Calculer" Margin="60 10" Background="#545d6a" Foreground="White" FontSize="18" Click="btnSubmit_Click"/>
+            </StackPanel>
+            <Label Name="key" Content="" Foreground="White" FontSize="18" HorizontalAlignment="Center"/>
+            <Label Name="completeEan" Content="" Foreground="White" FontSize="18" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Border>
+</Window>
